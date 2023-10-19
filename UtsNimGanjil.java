@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class UtsNimGanjil {
     public static void main(String[] args) {
         Scanner input07 = new Scanner(System.in);
-        int jumlahMinuman=0, jumlahMakanan=0, totHargaMakanan=0, hargaMakanan, hargaMinuman;
-        float totHargaMinuman=0, totalHarga=0;
+        int jumlahMinuman=0, hargaMakanan, hargaMinuman;
+        float totHargaMinuman=0, totalHarga=0, jumlahMakanan=0, totHargaMakanan=0;
         String jenisBarang, namaBarang, plastic;
         
         while (true) {
@@ -37,34 +37,34 @@ public class UtsNimGanjil {
             input07.nextLine();
         }
 
-        if (jumlahMinuman == 3){
-            System.out.println("hallop");
-            totHargaMinuman = (totHargaMinuman - (0.05F * totHargaMinuman));
-        }
-
-        totalHarga = totHargaMakanan + totHargaMinuman;
-        
-        if (totalHarga >= 1000000){
-            totalHarga = totalHarga + (0.07F * totalHarga);
-        }
-
-        System.out.print("Apakah Mau beli Plastic? y/n :");
+        System.out.print("Apakah Mau beli Plastic? y/n : ");
         plastic = input07.nextLine();
         if (plastic.equalsIgnoreCase("y")){
             totalHarga = totalHarga+200;
         }
 
+        System.out.println("Jumlah Makanan           : "+jumlahMakanan);
+        System.out.println("Jumlah Minuman           : "+jumlahMinuman);
+        System.out.println("Total Harga Makanan      : "+totHargaMakanan);
+        System.out.println("Total Harga Minuman      : "+totHargaMinuman);
 
+        if (jumlahMinuman == 3){
+            totHargaMinuman = (totHargaMinuman - (0.05F * totHargaMinuman));
+            System.out.println("Diskon Minuman           : "+ 0.05F * totHargaMinuman);
+        }
 
-        System.out.println("Jumlah Makanan        : "+jumlahMakanan);
-        System.out.println("Jumlah Minuman        : "+jumlahMinuman);
-        System.out.println("Total Harga Makanan   : "+totHargaMakanan);
-        System.out.println("Total Harga Minuman   : "+totHargaMinuman);
-        System.out.println("Total Harga           : "+totalHarga);
+        totalHarga = totHargaMakanan + totHargaMinuman;
 
+        System.out.println("Total Harga              : "+totalHarga);
 
+        if (totalHarga >= 1000000){
+            totalHarga = totalHarga + (0.07F * totalHarga);
+            System.out.println("PPN                      : "+ 0.07F * totalHarga);
+        } else {
+            System.out.println("PPN                      : 0");
+        }
 
-
+        System.out.println("Total Harga perlu Dibayar: "+totalHarga);
 
     }
 }
