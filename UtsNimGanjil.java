@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class UtsNimGanjil {
     public static void main(String[] args) {
         Scanner input07 = new Scanner(System.in);
-        int jumlahMinuman=0, hargaMakanan, hargaMinuman;
-        float totHargaMinuman=0, totalHarga=0, jumlahMakanan=0, totHargaMakanan=0;
+        int jumlahMinuman=0, hargaMakanan, jumlahMakanan=0, hargaMinuman;
+        float totHargaMinuman=0, totalHarga=0, totHargaMakanan=0;
         String jenisBarang, namaBarang, plastic;
         
         while (true) {
