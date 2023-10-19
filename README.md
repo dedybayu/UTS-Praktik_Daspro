@@ -1,7 +1,7 @@
 <H2>2341720041_Dedy Bayu Setiawan</h2>
 
 <h3>Output Program</h3>
-"'PS D:\DASAR PEMROGRAMAN\UTS Smst 1>  java UtsNimGanjil.java 
+```PS D:\DASAR PEMROGRAMAN\UTS Smst 1>  java UtsNimGanjil.java 
 Jenis Barang (Makanan/Minuman)/Selesai : makanan
 Masukan Nama Makanan : ayam geprek
 Masukan Harga        : 100000
@@ -49,4 +49,5 @@ Diskon Minuman           : 47500.0
 Total Harga              : 1550000.0
 PPN                      : 116095.0
 Total Harga perlu Dibayar: 1658500.0
-PS D:\DASAR PEMROGRAMAN\UTS Smst 1> "'
+PS D:\DASAR PEMROGRAMAN\UTS Smst 1>
+```
